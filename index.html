@@ -8,5 +8,13 @@
       Hello <span>web performance</span> students!
     </p>
     <div><img src="awesome-photo.jpg"></div>
+    <script>
+        window.onLoad = function() {
+          setTimeout(function(){
+              var t= performance.timing;
+              console.log(t.toJSON());
+          }, 0);
+        }
+    </script>
   </body>
 </html>
